@@ -37,8 +37,9 @@ def create_ticket():
 
         return jsonify({
             "message": "Ticket created",
-            "id": new_ticket.id
-        })
+            "id": new_ticket.id,
+            "status_code": 200
+        }), 200
 
     except Exception as e:
 
